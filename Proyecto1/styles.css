@@ -1,78 +1,61 @@
-body {
+/* Estilos básicos del body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #1e1e1e;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    background-size: 100% 100%; /* Asegura que el gradiente cubra toda el área visible */
+    background-attachment: fixed; /* Mantiene el fondo fijo mientras el contenido se desplaza */
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
 }
 
-.calculator {
-    width: 320px;
-    background-color: #333;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
 }
 
-.calculator .display {
-    background-color: #222;
-    color: #0aff0a;
-    font-size: 2.5rem;
-    text-align: right;
-    padding: 20px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #444;
+/* Estilo del título */
+.title {
+    font-size: 32px;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.calculator .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 20px;
+/* Estilo del mensaje */
+.message {
+    font-size: 20px;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+/* Estilo del botón de volver al portafolio */
+.back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #3498db; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.calculator .buttons button {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    padding: 20px;
-    cursor: pointer;
-    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s;
-}
-
-.calculator .buttons button:hover {
-    background-color: #555;
-    transform: translateY(-2px);
-    box-shadow: 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.calculator .buttons button:active {
-    background-color: #666;
-    transform: translateY(0);
-    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
-}
-
-.calculator .buttons .equal {
-    background-color: #0aff0a;
-    color: #000;
-    grid-column: span 4;
-    border-radius: 10px;
-}
-
-.calculator .buttons .equal:hover {
-    background-color: #66ff66;
-}
-
-.calculator .buttons .clear {
-    background-color: #f44336;
-    color: #fff;
-}
-
-.calculator .buttons .clear:hover {
-    background-color: #ff6666;
+.back-button:hover {
+    background-color: #2980b9; /* Color de fondo cuando el ratón está sobre el botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
