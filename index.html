@@ -5,37 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> <!-- Hoja de estilos principal -->
     <link rel="stylesheet" href="css/fonts.css"> <!-- Hoja de estilos para fuentes -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <h1 class="titulo">¿Quién soy?</h1> 
         </div>
-        <input type="checkbox" id="btn-menu">
-        <div class="container-menu">
-            <div class="cont-menu">
+        
+        <!-- Botón para abrir el menú offcanvas -->
+        <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <!-- Menú offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
                 <nav>
-                    <a href="Proyecto1/index.html" class="enlaces" target="_blank" >Proyectos</a>
+                    <a href="Proyecto1/index.html" class="enlaces" target="_blank">Proyectos</a>
                     <a href="contacto.html" class="enlaces" target="_blank">Contacto</a>
                     <a href="https://twitch.tv/begdevs" target="_blank">Twitch</a>
                     <a href="https://www.youtube.com/@Begdevs" target="_blank">Youtube</a>
-                    <a href="https://github.com/SLeeDw20/menu-lateral" target="_blank">Barra lateral </a>
+                    <a href="https://github.com/SLeeDw20/menu-lateral" target="_blank">Barra lateral</a>
                 </nav>
-                <label for="btn-menu">✖️</label>
             </div>
         </div>
-        <div class="btn-menu">
-            <label for="btn-menu">☰</label>
-        </div>
+
         <p class="presentacion">
         ¡Hola! Soy Begdevs, un programador junior de Buenos Aires, Argentina, en aprendizaje con un enfoque en desarrollo web. Actualmente, estoy perfeccionando mis habilidades en HTML y comenzando a explorar CSS y Python. Mi objetivo es crear sitios web funcionales y bien diseñados mientras continúo expandiendo mi conocimiento en tecnologías web.
         En este portafolio, encontrarás ejemplos de mi trabajo hasta ahora, que reflejan mi compromiso con el aprendizaje y el crecimiento en el campo del desarrollo web. Estoy entusiasmado por seguir adquiriendo experiencia y habilidades, y estoy abierto a nuevas oportunidades y desafíos. ¡Gracias por visitar mi portafolio y conocer mi trabajo!
         </p>
     </header>
-    
 
-
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
