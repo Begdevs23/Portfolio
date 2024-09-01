@@ -1,0 +1,110 @@
+body { 
+    background: linear-gradient(45deg, #353333be, #586fa994);
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden; 
+}
+
+.titulo {
+    font-family: 'RalewayTitle'; 
+    font-size: 36px; 
+    color: #ffffff; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin: 0; 
+    letter-spacing: 10px; 
+}
+
+.presentacion { 
+    font-family: 'RalewayP'; 
+    color: #faf8ff; 
+    font-size: 32px; 
+    font-weight: 400; 
+}
+
+.enlaces {
+    color: #3f5873; 
+    text-decoration: none; 
+    display: inline-block; 
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.9s ease, color 0.6s ease; 
+}
+
+ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0; 
+    margin: 0; 
+}
+
+ul li {
+    margin-right: 20px; 
+    font-size: 24px; 
+}
+
+ul li a:hover {
+    color: #f4f4f4; 
+    border-bottom-color: #ffffff7e; 
+}
+
+.container {
+    background: linear-gradient(to right, #0073ffb5, #00c8ff8d, transparent); 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 15px; 
+    margin-left: -15px;
+    margin-top: -10px;
+}
+
+.social-links {
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #241d1d; 
+    text-align: center; 
+    margin-left: -8px;
+}
+
+.social-links a {
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #ffffff; 
+    transition: color 0.5s ease; 
+    font-size: 30px;
+    font-family: 'Amsterdam';
+    letter-spacing: 1.5px;
+}
+
+.social-links .Git:hover {
+    color: #28a745; 
+}
+
+.social-links .Twitch:hover {
+    color: #9146ff; 
+}
+
+.social-links .mail:hover {
+    color: #d14836; 
+}
+
+
+.social-links img {
+    width: 24px; /* Tamaño del ícono */
+    height: 24px; /* Tamaño del ícono */
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
