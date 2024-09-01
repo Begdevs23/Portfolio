@@ -1,0 +1,119 @@
+body { 
+    background: linear-gradient(270deg, #0073ff, #00c8ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    font-family: 'Raleway', sans-serif; /* Asegúrate de incluir una fuente de respaldo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Animación de fondo */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilo general del contenedor del formulario */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 40px; 
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    max-width: 500px; /* Tamaño máximo del contenedor */
+    width: 100%; /* Ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el título */
+.titulo {
+    color: #0e0b43; /* Color de texto más oscuro */
+    font-size: 24px; /* Tamaño de fuente adecuado */
+    margin-bottom: 20px; /* Espacio entre el título y el mensaje */
+}
+
+/* Estilo para el mensaje informativo */
+.info-message {
+    color: #0e0b43; /* Color de texto más oscuro */
+    font-size: 16px; /* Tamaño de fuente adecuado */
+    margin-bottom: 30px; /* Espacio entre el mensaje y el formulario */
+}
+
+/* Estilos generales del formulario */
+form {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilo para grupos de entrada */
+.input-group {
+    margin-bottom: 15px; /* Espacio entre los grupos de entrada */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilo para etiquetas */
+label {
+    color: #0e0b43; /* Gris oscuro para las etiquetas */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo para campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    color: #333333; /* Texto oscuro en los campos */
+    border: 1px solid #cccccc; /* Borde gris claro */
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%; /* Hacer que los campos ocupen todo el ancho disponible */
+    box-sizing: border-box; /* Incluir el padding y border en el ancho total */
+    margin-bottom: 10px; /* Espacio entre los campos */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para el estado de foco en los campos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: rgba(173, 216, 230, 0.2); /* Celeste claro con baja opacidad */
+    border-color: #40b7cc; /* Cambia el borde al color deseado */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+/* Estilo para el campo de mensaje */
+textarea {
+    height: 100px; /* Altura fija para el campo de mensaje */
+    resize: none; /* Desactiva el redimensionamiento manual del campo */
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #0073ff; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+/* Estilo para el hover del botón */
+input[type="submit"]:hover {
+    background-color: #024d98; 
+}
+
+/* Estilo para los placeholders */
+input::placeholder,
+textarea::placeholder {
+    color: #666666; /* Gris medio para los placeholders */
+}

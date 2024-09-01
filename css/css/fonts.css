@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'RalewayTitle';
+    src: url("../fonts/static/Raleway-ExtraBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'RalewayP';
+    src: url("../fonts/static/Raleway-Light.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Amsterdam';
+    src: url("../fonts/New_Amsterdam/NewAmsterdam-Regular.ttf") format('truetype');
+}
