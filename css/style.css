@@ -11,11 +11,8 @@ body {
     background-repeat: no-repeat; 
     min-height: 100vh;
     display: flex;
-
+    flex-direction: column;
 }
-
-
-
 
 .titulo {
     font-family: 'RalewayTitle'; 
@@ -73,21 +70,24 @@ ul li a:hover {
     display: flex; 
     justify-content: space-between; 
     padding: 15px; 
+    position: relative; /* Asegura que el botón del menú esté en el contenedor */
 }
 
-/* Estilos del menú lateral (offcanvas) */
 .offcanvas {
     background: #2c2c2c;
     color: #e0e0e0;
-    transition: transform 0.3s ease, visibility 0.3s ease;
-    transform: translateX(-100%);
-    visibility: hidden;
     width: 300px; /* Ajusta el ancho del offcanvas según tus necesidades */
+    position: fixed; /* Asegúrate de que esté fijo en la pantalla */
+    top: 0; /* Ajusta según la posición deseada */
+    left: 0; /* Ajusta según la posición deseada */
+    height: 100%; /* Ajusta la altura si es necesario */
+    z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out; /* Transición suave para el movimiento */
 }
 
 .offcanvas.show {
     transform: translateX(0);
-    visibility: visible;
 }
 
 .offcanvas-header {
@@ -106,6 +106,7 @@ ul li a:hover {
     padding: 0;
     background: #2c2c2c;
 }
+
 
 .offcanvas a {
     display: block;
@@ -144,23 +145,7 @@ ul li a:hover {
     align-items: center;
     justify-content: center;
     z-index: 1000; 
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(41, 41, 41, 0.185);
     border: none;
-    border-radius: 50%;
-    transition: background 0.3s ease;
-}
-
-.btn-menu:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-header {
-    padding-bottom: 30px;
-    margin-bottom: 0;
-}
-
-footer {
-    background-color: #241d1d;
-    margin-top: auto; /* Asegura que el footer esté al final de la página si el contenido es corto */
-    padding: 10px 0; 
+    transition: background 0.3s ease; /* Ajusta la transición del botón si lo deseas */
 }
