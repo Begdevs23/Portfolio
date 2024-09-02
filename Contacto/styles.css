@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo span {
+    color: #F0C040; /* Amarillo pálido */
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em; /* Espacio entre columnas */
+}
+
+.contact-form form label {
+    display: block;
+    font-weight: bold; /* Etiquetas resaltadas */
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 0.5em 0; /* Ajustado padding */
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid #007BFF; /* Azul primario */
+    background: #333;
+    color: #fff;
+    border-radius: 4px; /* Bordes redondeados */
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    border-color: #0056b3; /* Azul más oscuro */
+    background-color: #1d6ec543; /* Fondo más claro al enfocar */
+}
+
+.contact-form form button {
+    background: #007BFF; /* Azul primario */
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: #FFF; /* Texto blanco */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #0056b3; /* Azul más oscuro para el hover */
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* Botón de volver al portafolio */
+.back-to-portfolio {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #007BFF; /* Azul primario */
+    color: #FFF; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.back-to-portfolio:hover {
+    background-color: #0056b3; /* Azul más oscuro para el hover */
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    #hero p {
+        font-size: 1.3rem;
+    }
+}
+
+.dropdown_menu {
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}

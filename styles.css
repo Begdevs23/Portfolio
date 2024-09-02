@@ -145,7 +145,7 @@ section#hero {
 }
 
 #hero p {
-    font-size: 1.3rem;
+    font-size: 30px;
     padding: 10px;
     font-family: sans-serif;
 }
@@ -164,6 +164,10 @@ section#hero {
 
     .navbar .toggle_btn {
         display: block;
+    }
+
+    #hero p {
+        font-size: 1.3rem;
     }
 }
 

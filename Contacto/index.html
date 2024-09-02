@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website with a contact Form 01</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    <!-- Botón para volver al portafolio -->
+    <a href="../index.html" class="back-to-portfolio">Volver al Portafolio</a>
+
+    <div class="content">
+
+        <h1 class="logo">¡Let's <span>Talk!</span></h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contact us</h3>
+                <form action="https://formsubmit.co/begdevs@gmail.com" method="POST">
+                    <p>
+                        <label>Full Name</label>
+                        <input type="text" name="fullname" placeholder="Nombre completo" required>
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                    </p>
+                    <p>
+                        <label>Affair</label>
+                        <input type="text" name="affair" placeholder="Asunto">
+                    </p>
+                    <p class="block">
+                        <label>Message</label> 
+                        <textarea name="message" rows="3" placeholder="Mensaje"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Send
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Argentina</li>
+                    <li><i class="fas fa-envelope-open-text"></i> begdevs@gmail.com</li>
+                </ul>
+                <p>Utiliza este formulario para ponerte en contacto conmigo. Ya sea que tengas preguntas, comentarios o simplemente quieras decir hola, estaré encantado de saber de ti. Completa los campos a continuación y responderé a tu mensaje lo antes posible. ¡Gracias por tu interés!</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script para alertar al enviar el formulario -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+                form.submit();
+            });
+        });
+    </script>
+
+</body>
+</html>
