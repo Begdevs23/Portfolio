@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000; /* Texto en un color claro */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Estilo para el elemento <li> */
+li {
+    list-style: none;
+    display: inline-block; /* Alinea los elementos en línea */
+    margin: 10px; /* Espacio alrededor del botón */
+}
+
+/* Estilo para los enlaces dentro del <li> */
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transiciones suaves */
+    display: inline-block; /* Alinea el botón como un bloque en línea */
+}
+
+/* Estilo para el estado hover del enlace */
+a:hover {
+    color: #000; /* Color del texto al pasar el ratón */
+    background-color: #ffa500; /* Fondo del botón al pasar el ratón (naranja) */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilo para el estado active del enlace */
+a:active {
+    background-color: #e59400; /* Fondo del botón cuando está presionado */
+    transform: scale(0.98); /* Efecto de reducción al presionar el botón */
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    flex-direction: column; /* Organizar en columna en lugar de fila */
+}
+
+#typing-effect {
+    font-size: 1.5em;
+    color: #fff; /* Color base del texto neón */
+    border-right: 2px solid #00f0f0; /* Cursor tipo neón */
+    white-space: pre-wrap; /* Permitir que el texto se ajuste en varias líneas */
+    overflow: hidden;
+    max-width: 90vw; /* Limitar el ancho máximo para evitar desbordamientos */
+    margin: 0 auto; /* Centrar el elemento */
+    line-height: 1.4; /* Ajustar el espacio entre líneas */
+    text-shadow: 
+        0 0 2px #00f0f0, 
+        0 0 4px #00f0f0, 
+        0 0 6px #00f0f0, 
+        0 0 8px #00f0f0, 
+        0 0 1.6px #00f0f0; /* Efecto de brillo neón muy suave */
+}
+
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    #hero {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #typing-effect {
+        font-size: 1.2em;
+        line-height: 1.3;
+    }
+}
