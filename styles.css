@@ -1,11 +1,13 @@
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 /* Estilos globales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Global */
 }
-
 
 /* Estilos del body */
 body {
@@ -149,17 +151,17 @@ section#hero {
 #hero p {
     font-size: 36px;
     padding: 10px;
-    font-family: "Archivo";
+    font-family: "Archivo", sans-serif; /* Fuente del héroe */
     font-style: italic;
     letter-spacing: 4.1px;
     font-weight: bold; 
     margin-bottom: 20px; 
 }
 
-
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: "Archivo", sans-serif; /* Fuente del héroe */
 }
 
 /* RESPONSIVE DESIGN */
